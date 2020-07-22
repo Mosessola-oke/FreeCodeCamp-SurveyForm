@@ -1,0 +1,88 @@
+@import '../../Global_SCSS/resets';
+@import '../../Global_SCSS/functions';
+@import '../../Global_SCSS/variables';
+
+@mixin flexAI {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label, div, option, input, p, textarea, select{
+  margin: 10px;
+}
+
+html {
+  background-color: rgb(29, 18, 68);
+  background-image: url(/resources/Images/dwbackground2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: whitesmoke;
+  font-size: 100%;
+}
+
+header{
+  @include flexAI();
+  padding: 40px;
+}
+
+#title {  
+  font-size: 3rem;
+  margin: 10px;
+}
+
+#description {
+  font-size: 1rem;
+}
+
+main {
+  @include flexAI();
+  background-color: rgba(25, 25, 112, 0.295);
+  box-shadow: 0px 10px 20px rgba($color: rgb(29, 26, 26), $alpha: .8);
+  height: auto;
+  padding: 25px;
+}
+
+.form-section {
+  //border: 2px solid black;
+  font-family: inherit;
+  font-size: 1.5rem;
+  padding: 5px;
+}
+
+
+.input-box, .input-button {
+  width: 100%;
+  height: 50px;
+  font-family: inherit;
+  font-size: 1.75rem;
+  padding: 5px;
+  border-radius: 0.25rem;
+  box-shadow: 0px 0px 20px rgba($color: rgb(29, 26, 26), $alpha: .8);
+}
+
+input[type=radio], input[type=checkbox] {
+  transform: scale(2);
+}
+
+.input-textarea {
+  width: 100%;
+  min-height: 50px;
+  font-family: inherit;
+  font-size: 1.75rem;
+  padding: 5px;
+  border-radius: 0.25rem;
+  box-shadow: 0px 0px 20px rgba($color: rgb(29, 26, 26), $alpha: .8);
+  resize: vertical;
+}
+
+span{
+  font-size: 1rem;
+}
+
+

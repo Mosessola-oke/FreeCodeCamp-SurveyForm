@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./resources/css/style.css">
+  <title>Doctor Who Survey</title>
+</head>
+
+<body>
+  <header>
+    <h1 id="title">Doctor Who Survey Form</h1>
+    <p id="description">A Simple form to know how much you love Doctor Who!!!</p>
+  </header>
+  <main>
+    <form id="survey-form">
+      <div class="form-section">
+        <label id='name-label' for="name">Name</label><br>
+        <input type="text" name="Name" id="name" placeholder="Name" class="input-box" required>
+      </div>
+      <div class="form-section">
+        <label id="email-label" for="email">Email</label><br>
+        <input id="number-label" type="email" name="Email" id="email" placeholder="Email" class="input-box" required>
+      </div>
+      <div class="form-section">
+        <label for="number">Age (Optional)</label>
+        <input type="number" name="Age" id="number" min="10" max="99" placeholder="Age" class="input-box" >
+      </div>
+      <div class="form-section">
+        <label id="dropdown" for="doctors">Who's your favorite doctor?</label>
+        <select name="doctors" id="doctors" class="input-box" required>
+          <option value="">Select One</option>
+          <option value="William-Hartnell">William Hartnell</option>
+          <option value="Patrick-Troughton">Patrick Troughton</option>
+          <option value="Jon-Pertwee">Jon Pertwee</option>
+          <option value="Tom-Baker">Tom Baker</option>
+          <option value="Peter-Davison">Peter Davison</option>
+          <option value="Colin-Baker">Colin Baker</option>
+          <option value="Sylvester-McCoy">Sylvester McCoy</option>
+          <option value="Paul-McGann">Paul McGann</option>
+          <option value="Christopher-Eccleston">Christopher Eccleston</option>
+          <option value="David-Tennant">David Tennant</option>
+          <option value="John-Hurt">John Hurt</option>
+          <option value="Matt-Smith">Matt Smith</option>
+          <option value="Peter-Capaldi">Peter Capaldi</option>
+          <option value="Jodie-Whittaker">Jodie Whittaker</option>
+        </select>
+      </div>
+
+      <div class="form-section">
+        <p>How old were you when you started watching Doctor Who?</p>
+        <div>
+          <div class="radio-container">
+            <input type="radio" name="howOld" id="ageRange2" value="10-20">
+            <label for="ageRange2">10-20</label>
+          </div>
+          <div class="radio-container">
+            <input type="radio" name="howOld" id="ageRange3" value="21-30">
+            <label for="ageRange3"> 21-30</label>
+          </div>
+          <div class="radio-container">
+            <input type="radio" name="howOld" id="ageRange4" value="31-40">
+            <label for="ageRange4">31-40</label>
+          </div>
+          <div class="radio-container">
+            <input type="radio" name="howOld" id="ageRange5" value="41-50">
+            <label for="ageRange5">41-40</label>
+          </div>
+          <div class="radio-container">
+            <input type="radio" name="howOld" id="ageRange1" value="41+" required>
+            <label for="ageRange1">51+</label>
+          </div>
+        </div>
+      </div>
+      <div class="form-section">
+        <p>Outside of watching the Doctor Who, what else have to done to show support? <span>(Select all that apply)</span></p>
+        <div class="checkbox-container">
+          <input id="DVD/BD" type="checkbox" value="DVD/BD" required>
+          <label for="DVD/BD">Bought DVD/Blu-ray</label>
+        </div>
+        <div class="checkbox-container">
+          <input id="mobile-games" type="checkbox" value="mobile-games">
+          <label for="mobile-games">Played the Mobile games</label>
+        </div>
+        <div class="checkbox-container">
+          <input id="pc-games" type="checkbox" value="pc-games">
+          <label for="pc-games">Played the PC games</label>
+        </div>
+        <div class="checkbox-container">
+          <input id="merchandise" type="checkbox" value="merchandise">
+          <label for="merchandise">Bought the Merchandise </label>
+        </div>
+        <div class="checkbox-container">
+          <input id="live-event" type="checkbox" value="live-event">
+          <label for="live-event">Attended a Live Event</label>
+        </div>
+      </div>
+      <div class="form-section">
+        <p>What do you love most about Doctor Who?</p>
+        <textarea name="comments" class="input-textarea" cols="40" rows="5"
+          placeholder="Enter comment here..." ></textarea>
+      </div>
+      <div class="form-section">
+        <input type="submit" value="Submit" class="input-button">
+      </div>
+    </form>
+  </main>
+  <footer>
+
+  </footer>
+</body>
+
+</html>
