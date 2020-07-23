@@ -21,15 +21,15 @@
       </div>
       <div class="form-section">
         <label id="email-label" for="email">Email</label><br>
-        <input id="number-label" type="email" name="Email" id="email" placeholder="Email" class="input-box" required>
+        <input type="email" name="Email" id="email" placeholder="Email" class="input-box" required>
       </div>
       <div class="form-section">
-        <label for="number">Age (Optional)</label>
+        <label id="number-label" for="number">Age (Optional)</label>
         <input type="number" name="Age" id="number" min="10" max="99" placeholder="Age" class="input-box" >
       </div>
       <div class="form-section">
-        <label id="dropdown" for="doctors">Who's your favorite doctor?</label>
-        <select name="doctors" id="doctors" class="input-box" required>
+        <p>Who's your favorite doctor?</p>
+        <select name="doctors" id="dropdown" class="input-box" required>
           <option value="">Select One</option>
           <option value="William-Hartnell">William Hartnell</option>
           <option value="Patrick-Troughton">Patrick Troughton</option>
@@ -52,23 +52,23 @@
         <p>How old were you when you started watching Doctor Who?</p>
         <div>
           <div class="radio-container">
-            <input type="radio" name="howOld" id="ageRange2" value="10-20">
+            <input type="radio" name="howOld" value="10-20">
             <label for="ageRange2">10-20</label>
           </div>
           <div class="radio-container">
-            <input type="radio" name="howOld" id="ageRange3" value="21-30">
+            <input type="radio" name="howOld" value="21-30">
             <label for="ageRange3"> 21-30</label>
           </div>
           <div class="radio-container">
-            <input type="radio" name="howOld" id="ageRange4" value="31-40">
+            <input type="radio" name="howOld" value="31-40">
             <label for="ageRange4">31-40</label>
           </div>
           <div class="radio-container">
-            <input type="radio" name="howOld" id="ageRange5" value="41-50">
+            <input type="radio" name="howOld" value="41-50">
             <label for="ageRange5">41-40</label>
           </div>
           <div class="radio-container">
-            <input type="radio" name="howOld" id="ageRange1" value="41+" required>
+            <input type="radio" name="howOld" value="41+" required>
             <label for="ageRange1">51+</label>
           </div>
         </div>
@@ -76,7 +76,7 @@
       <div class="form-section">
         <p>Outside of watching the Doctor Who, what else have to done to show support? <span>(Select all that apply)</span></p>
         <div class="checkbox-container">
-          <input id="DVD/BD" type="checkbox" value="DVD/BD" required>
+          <input id="DVD/BD" type="checkbox" value="DVD/BD">
           <label for="DVD/BD">Bought DVD/Blu-ray</label>
         </div>
         <div class="checkbox-container">
@@ -101,8 +101,8 @@
         <textarea name="comments" class="input-textarea" cols="40" rows="5"
           placeholder="Enter comment here..." ></textarea>
       </div>
-      <div class="form-section">
-        <input type="submit" value="Submit" class="input-button">
+      <div class="form-section" id="button">
+        <input type="submit" value="Submit" class="input-button" id="submit">
       </div>
     </form>
   </main>
@@ -110,5 +110,5 @@
 
   </footer>
 </body>
-
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </html>
