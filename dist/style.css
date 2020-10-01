@@ -18,7 +18,7 @@ label, div, option, input, p, textarea, select {
 
 html {
   background-color: #1d1244;
-  background-image: url(/resources/Images/dwbackground2.png);
+  background-image: url(./Images/dwbackground2.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
